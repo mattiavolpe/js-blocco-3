@@ -29,6 +29,18 @@ const animals = [
     nome: 'gallina',
     famiglia: 'fasianidi',
     classe: 'uccelli'
+  },
+
+  {
+    nome: 'ape',
+    famiglia: 'apidae',
+    classe: 'insetti'
+  },
+
+  {
+    nome: 'scoiattolo',
+    famiglia: 'sciuridae',
+    classe: 'mammiferi'
   }
 
 ];
