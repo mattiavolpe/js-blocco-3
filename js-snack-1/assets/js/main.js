@@ -84,7 +84,7 @@ dieselCars.forEach((car) => {
   document.body.insertAdjacentHTML("beforeend", `${car.brand}<br>${car.model}<br>${car.fuel}<br><br>`);
 })
 
-const otherCars = cars.filter(car => car.fuel.toLowerCase() != "benzina" && car["fuel"].toLowerCase() != "diesel");
+const otherCars = cars.filter(car => car.fuel.toLowerCase() != "benzina" && car.fuel.toLowerCase() != "diesel");
 document.body.insertAdjacentHTML("beforeend", "<strong>Auto con altra alimentazione:</strong><br>");
 otherCars.forEach((car) => {
   document.body.insertAdjacentHTML("beforeend", `${car.brand}<br>${car.model}<br>${car.fuel}<br><br>`);
