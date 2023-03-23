@@ -72,25 +72,19 @@ const cars = [
 ];
 
 
-const gasolineCars = cars.filter((car) => {
-  return car["fuel"].toLowerCase() == "benzina";
-})
+const gasolineCars = cars.filter(car => car["fuel"].toLowerCase() == "benzina");
 document.body.insertAdjacentHTML("beforeend", "<strong>Auto a benzina:</strong><br>");
 gasolineCars.forEach((car) => {
   document.body.insertAdjacentHTML("beforeend", `${car.brand}<br>${car.model}<br>${car.fuel}<br><br>`);
 })
 
-const dieselCars = cars.filter((car) => {
-  return car["fuel"].toLowerCase() == "diesel";
-})
+const dieselCars = cars.filter(car => car["fuel"].toLowerCase() == "diesel");
 document.body.insertAdjacentHTML("beforeend", "<strong>Auto diesel:</strong><br>");
 dieselCars.forEach((car) => {
   document.body.insertAdjacentHTML("beforeend", `${car.brand}<br>${car.model}<br>${car.fuel}<br><br>`);
 })
 
-const otherCars = cars.filter((car) => {
-  return car["fuel"].toLowerCase() != "benzina" && car["fuel"].toLowerCase() != "diesel";
-})
+const otherCars = cars.filter(car => car["fuel"].toLowerCase() != "benzina" && car["fuel"].toLowerCase() != "diesel");
 document.body.insertAdjacentHTML("beforeend", "<strong>Auto con altra alimentazione:</strong><br>");
 otherCars.forEach((car) => {
   document.body.insertAdjacentHTML("beforeend", `${car.brand}<br>${car.model}<br>${car.fuel}<br><br>`);
