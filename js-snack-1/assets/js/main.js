@@ -75,14 +75,23 @@ const cars = [
 const gasolineCars = cars.filter((car) => {
   return car["fuel"].toLowerCase() == "benzina";
 })
-console.log(gasolineCars);
+document.body.insertAdjacentHTML("beforeend", "<strong>Auto a benzina:</strong><br>");
+gasolineCars.forEach((car) => {
+  document.body.insertAdjacentHTML("beforeend", `${car.brand}<br>${car.model}<br>${car.fuel}<br><br>`);
+})
 
 const dieselCars = cars.filter((car) => {
   return car["fuel"].toLowerCase() == "diesel";
 })
-console.log(dieselCars);;
+document.body.insertAdjacentHTML("beforeend", "<strong>Auto diesel:</strong><br>");
+dieselCars.forEach((car) => {
+  document.body.insertAdjacentHTML("beforeend", `${car.brand}<br>${car.model}<br>${car.fuel}<br><br>`);
+})
 
 const otherCars = cars.filter((car) => {
   return car["fuel"].toLowerCase() != "benzina" && car["fuel"].toLowerCase() != "diesel";
 })
-console.log(otherCars);
+document.body.insertAdjacentHTML("beforeend", "<strong>Auto con altra alimentazione:</strong><br>");
+otherCars.forEach((car) => {
+  document.body.insertAdjacentHTML("beforeend", `${car.brand}<br>${car.model}<br>${car.fuel}<br><br>`);
+})
