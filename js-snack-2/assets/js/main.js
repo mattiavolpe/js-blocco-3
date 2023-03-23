@@ -6,7 +6,5 @@ Es: [‘pippo’, ‘PLUTO’, ‘Paperino’] => [‘Pippo’, ‘Pluto’, ‘
 
 const words = ["fabio", "lucA", "aLEx", "MAttiA", "fabrIZio", "LorENzO", "ROBERTO", "franCESco"];
 
-const capitalizedWords = words.map((word) => {
-  return word[0].toUpperCase() + word.slice(1).toLowerCase();
-});
+const capitalizedWords = words.map(word => word[0].toUpperCase() + word.slice(1).toLowerCase());
 console.log(capitalizedWords);
